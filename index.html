@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Owner Assets Demo</title>
+  <style>
+    /* BASIC RESET & LAYOUT */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      background: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'ComicCondensed', sans-serif;
+    }
+
+    /* CARD CONTAINER (frame as background + mask) */
+    .card {
+      position: relative;
+      width: 1200px;   /* match your PNG dimensions */
+      height: 1600px;
+      background: 
+        url('assets/732e37ec-5e5d-460c-bd52-4cdef642af31.png')
+        center/cover no-repeat;
+      border-radius: 24px;
+      overflow: hidden;
+      color: white;
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    /* PORTRAIT */
+    .portrait {
+      position: absolute;
+      top: 200px;       /* tune to your template’s window */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;     /* adjust as needed */
+      z-index: 1;
+    }
+
+    /* SERIES & SUBTITLE */
+    .series {
+      position: absolute;
+      top: 40px;
+      width: 100%;
+      text-align: center;
+      font-size: 72px;
+      z-index: 2;
+    }
+    .subtitle {
+      position: absolute;
+      top: 120px;
+      width: 100%;
+      text-align: center;
+      font-size: 48px;
+      font-style: italic;
+      z-index: 2;
+    }
+
+    /* TRAIT BARS */
+    .traits {
+      position: absolute;
+      bottom: 140px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      z-index: 2;
+    }
+    .trait {
+      flex: 1;
+      text-align: center;
+      font-size: 36px;
+    }
+
+    /* EDITION NUMBER */
+    .edition {
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Portrait image -->
+    <img 
+      src="assets/detective-portrait.png" 
+      alt="Detective Portrait" 
+      class="portrait"
+    />
+
+    <!-- Text overlays -->
+    <div class="series">OWNER</div>
+    <div class="subtitle">Detective</div>
+
+    <div class="traits">
+      <div class="trait">🔍 Weary Sleuth</div>
+      <div class="trait">📜 Paper Trail</div>
+      <div class="trait">☕ Coffee Dependency</div>
+    </div>
+
+    <div class="edition">01/01</div>
+  </div>
+</body>
+</html>
