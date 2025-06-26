@@ -1,0 +1,44 @@
+{
+  "test-card": {
+    "templateId": "test-card",
+    "name": "🃏 Test Card",
+    "description": "A sandbox card used for testing feeds and revives.",
+    "image": "https://raw.githubusercontent.com/SGGregory76/Adoptables/main/cards/test-card.png",
+    "tier": "Bronze",
+    "maxSupply": 100,
+    "attributes": [
+      { "trait_type": "Attack", "value": 10 },
+      { "trait_type": "Defense", "value": 8 },
+      { "trait_type": "Rarity", "value": "Common" },
+      { "trait_type": "DecayRatePerHour", "value": 5 }
+    ]
+  },
+  "champion-shiba": {
+    "templateId": "champion-shiba",
+    "name": "Champion Shiba",
+    "description": "A veteran guard dog turned meta-hero.",
+    "image": "https://raw.githubusercontent.com/SGGregory76/Adoptables/main/cards/champion-shiba.png",
+    "tier": "Bronze",
+    "maxSupply": 100,
+    "attributes": [
+      { "trait_type": "Attack", "value": 12 },
+      { "trait_type": "Defense", "value": 9 },
+      { "trait_type": "Rarity", "value": "Common" },
+      { "trait_type": "DecayRatePerHour", "value": 5 }
+    ]
+  },
+  "graffiti-greg": {
+    "templateId": "graffiti-greg",
+    "name": "Graffiti Greg",
+    "description": "A street artist turned card legend.",
+    "image": "https://raw.githubusercontent.com/SGGregory76/Adoptables/main/cards/graffiti-greg.png",
+    "tier": "Silver",
+    "maxSupply": 50,
+    "attributes": [
+      { "trait_type": "Attack", "value": 8 },
+      { "trait_type": "Defense", "value": 10 },
+      { "trait_type": "Rarity", "value": "Uncommon" },
+      { "trait_type": "DecayRatePerHour", "value": 4 }
+    ]
+  }
+}
