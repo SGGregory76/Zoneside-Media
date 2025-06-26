@@ -3,7 +3,12 @@
     "templateId": "test-card",
     "name": "🃏 Test Card",
     "description": "A sandbox card used for testing feeds and revives.",
-    "image": "https://raw.githubusercontent.com/SGGregory76/Adoptables/main/cards/test-card.png",
+    "image": "<img
+  src="https://cdn.jsdelivr.net/gh/SGGregory76/Zoneside-Media@main/cards/e0cb93b2-5df1-4fd5-83ce-197e1e513e2e.png"
+  alt="Card e0cb93b2-…"
+  style="max-width:100%;height:auto;"
+/>
+,
     "tier": "Bronze",
     "maxSupply": 100,
     "attributes": [
