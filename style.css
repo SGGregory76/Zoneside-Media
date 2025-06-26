@@ -2,20 +2,23 @@
   position: relative;
   width: 1200px;
   height: 1600px;
-  /* add uniform corner rounding: */
-  border-radius: 24px;     /* adjust this value to taste */
-  overflow: hidden;         /* clip anything sticking out */
+
+  /* 1) Apply your frame as the background */
+  background: url('assets/35f214ba-6d78-45de-aa45-aaa4531fde12.png')
+              center/cover no-repeat;
+
+  /* 2) Round all four corners and clip everything inside */
+  border-radius: 24px;   /* choose your radius */
+  overflow: hidden;
+
+  /* other styles */
   font-family: 'ComicCondensed', sans-serif;
   color: white;
   text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 
-/* make sure your frame image isn’t applying its own rounding */
-.frame {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;        /* override any rounding on the PNG itself */
-  z-index: 10;
-}
+/* Portrait and text layers sit on top as before */
+.portrait { /* … */ }
+.header {/* … */}
+.traits {/* … */}
+.edition {/* … */}
